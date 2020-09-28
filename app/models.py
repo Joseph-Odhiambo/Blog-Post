@@ -20,6 +20,7 @@ class User (UserMixin,db.Model):
     photos = db.relationship('PhotoProfile',backref = 'user',lazy = "dynamic")
 
 
+
     @property
     def set_password(self):
         raise AttributeError('You cannot read the password attribute')
