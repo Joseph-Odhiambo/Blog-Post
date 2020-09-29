@@ -1,5 +1,5 @@
 from flask import Flask 
-from config import Config, config_options
+from config import config_options
 from flask_mail import Mail
 from flask_login import LoginManager
 from flask_bootstrap import Bootstrap
@@ -22,11 +22,11 @@ mail = Mail()
 
 
 
-def create_app():
+def create_app(mode):
     app = Flask(__name__)
 
     # create app configurations
-    app.config.from_object(Config)
+    app.config.from_object(config_options[mode])
     
     # Registering the blueprint
     from .auth import auth as authentication_blueprint
@@ -40,7 +40,8 @@ def create_app():
     db.init_app(app)
     bootstap.init_app(app)
     mail.init_app(app)
-
+    
+    app.config['SECRET_KEY'] = 'any secret string'
     # setting config
     # from .requests import configure_request
     # configure_request(app)

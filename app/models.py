@@ -17,7 +17,8 @@ class User (UserMixin,db.Model):
     hashed_password = db.Column(db.String(255),nullable = False)
     blog = db.relationship('Blog', backref='user', lazy='dynamic')
     comment = db.relationship('Comment', backref='user', lazy='dynamic')
-    photos = db.relationship('PhotoProfile',backref = 'user',lazy = "dynamic")
+    profile_pic = db.Column(db.String(255))
+    # photos = db.relationship('PhotoProfile',backref = 'user',lazy = "dynamic")
 
 
 
