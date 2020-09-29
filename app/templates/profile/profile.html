@@ -6,17 +6,20 @@
     <div class="col-md-1"></div>
     <div class="col-md-4 black">
         <div class="content-section mt-4">
+
             {% for message in get_flashed_messages() %}
-            <div class="alert alert-success">
-            <button type="button" class="close" data-dismiss="alert">&times;</button>
-            {{ message }}
-            </div>
+              <div class="alert alert-success">
+              <button type="button" class="close" data-dismiss="alert">&times;</button>
+              {{ message }}
+              </div>
             {% endfor %}
+
             {% if errors %}
               {% for error in errors %}
                 <span class="text-danger">{{ error }}</span></br>
               {% endfor %}
             {%endif%}
+            
     <div class="card testimonial-card">
     <div class="card-up indigo lighten-1"></div>
     <div class="avatar mx-auto white">
