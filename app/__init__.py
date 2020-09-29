@@ -29,8 +29,8 @@ def create_app():
     app.config.from_object(Config)
     
     # Registering the blueprint
-    from app import auth as authentication_blueprint
-    from app import main as main_blueprint
+    from .auth import auth as authentication_blueprint
+    from .main import main as main_blueprint
 
     app.register_blueprint(authentication_blueprint)
     app.register_blueprint(main_blueprint)
@@ -42,8 +42,8 @@ def create_app():
     mail.init_app(app)
 
     # setting config
-    from .requests import configure_request
-    configure_request(app)
+    # from .requests import configure_request
+    # configure_request(app)
 
     # configure UploadSet
     configure_uploads(app,photos)
