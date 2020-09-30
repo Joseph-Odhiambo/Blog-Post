@@ -11,16 +11,16 @@ This  is a flask application that allows writers to post blogs, edit and delite 
 
 ## Screenshots
 ### Post from subscriber
-<img src="https://github.com/Joseph-Odhiambo/Blog-Post/blob/master/app/static/photos/posts.png?raw=true" width="800px" height="400px">
+<img src="https://github.com/Joseph-Odhiambo/Blog-Post/blob/master/app/static/photos/1.png?raw=true" width="800px" height="400px">
 
 ### Make a comment
-<img src="https://github.com/Joseph-Odhiambo/Blog-Post/blob/master/app/static/photos/comment.png?raw=true" width="800px" height="400px">
+<img src="https://github.com/Joseph-Odhiambo/Blog-Post/blob/master/app/static/photos/2.png?raw=true" width="800px" height="400px">
 
 ### All comments view
-<img src="https://github.com/Joseph-Odhiambo/Blog-Post/blob/master/app/static/photos/allcomments.png?raw=true" width="800px" height="400px">
+<img src="https://github.com/Joseph-Odhiambo/Blog-Post/blob/master/app/static/photos/3.png?raw=true" width="800px" height="400px">
 
 ### Delete a comment
-<img src="https://github.com/Joseph-Odhiambo/Blog-Post/blob/master/app/static/photos/confirm-delete.png?raw=true" width="800px" height="400px">
+<img src="https://github.com/Joseph-Odhiambo/Blog-Post/blob/master/app/static/photos/4.png?raw=true" width="800px" height="400px">
 
 
 
