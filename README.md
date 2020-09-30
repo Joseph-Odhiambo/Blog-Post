@@ -65,7 +65,7 @@ To get the code..
   ```
 4. Running the application
   ```bash
-  python manage.py server
+  python manage.py run
   ```
 5. Testing the application
   ```bash
