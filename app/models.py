@@ -41,8 +41,12 @@ class User (UserMixin,db.Model):
         db.session.delete(self)
         db.session.commit()
 
+
+        
+
     def __repr__(self):
         return "User: %s" %str(self.username)
+
 
 class Blog(db.Model):
     __tablename__ = 'blogs'
